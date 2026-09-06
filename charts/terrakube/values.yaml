@@ -434,6 +434,14 @@ ingress:
 
   ui:
     enabled: true
+    gateways: []
+    # Custom parentRef configuration for this endpoint, such as sectionName.
+    # gateways:
+    #   - group: gateway.networking.k8s.io
+    #     kind: Gateway
+    #     name: internal-gateway
+    #     namespace: gateway-system
+    #     sectionName: https-terrakube-ui
     domain: "terrakube-ui.minikube.net"
     path: "/"
     pathType: "Prefix"
@@ -445,6 +453,14 @@ ingress:
   
   api:
     enabled: true
+    gateways: []
+    # Custom parentRef configuration for this endpoint, such as sectionName.
+    # gateways:
+    #   - group: gateway.networking.k8s.io
+    #     kind: Gateway
+    #     name: internal-gateway
+    #     namespace: gateway-system
+    #     sectionName: https-terrakube-api
     domain: "terrakube-api.minikube.net"
     path: "/"
     pathType: "Prefix"
@@ -457,6 +473,14 @@ ingress:
 
   registry:
     enabled: true
+    gateways: []
+    # Custom parentRef configuration for this endpoint, such as sectionName.
+    # gateways:
+    #   - group: gateway.networking.k8s.io
+    #     kind: Gateway
+    #     name: internal-gateway
+    #     namespace: gateway-system
+    #     sectionName: https-terrakube-reg
     domain: "terrakube-reg.minikube.net"
     path: "/"
     pathType: "Prefix"
@@ -475,6 +499,14 @@ ingress:
       nginx.ingress.kubernetes.io/proxy-set-headers: "terrakube/custom-headers"
   executor:
     enabled: false
+    gateways: []
+    # Custom parentRef configuration for this endpoint, such as sectionName.
+    # gateways:
+    #   - group: gateway.networking.k8s.io
+    #     kind: Gateway
+    #     name: internal-gateway
+    #     namespace: gateway-system
+    #     sectionName: https-terrakube-executor
     domain: "terrakube-executor.minikube.net"
     path: "/"
     pathType: "Prefix"
