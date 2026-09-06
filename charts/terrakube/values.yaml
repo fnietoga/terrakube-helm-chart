@@ -429,6 +429,8 @@ ingress:
   gatewayapi:
     apiVersion: v1beta1
     enabled: false
+    # Enable when a Gateway in another namespace needs to reference a TLS Secret in this namespace and no external ReferenceGrant exists.
+    createReferenceGrant: false
     gateways: []
     annotations: {}
 

@@ -838,6 +838,9 @@
                         },
                         "gateways": {
                             "type": "array"
+                        },
+                        "createReferenceGrant": {
+                            "type": "boolean"
                         }
                     }
                 },
