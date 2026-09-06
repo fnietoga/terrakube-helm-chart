@@ -228,6 +228,7 @@ api:
     enabled: false
     secretName:
       - terrakube-executor-secrets
+    # Set to terrakube-executor-config to reuse the same configuration for ephemeral executions.
     configMapName: ""
     podAnnotations: {}
   secrets:
