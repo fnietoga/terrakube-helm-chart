@@ -95,6 +95,9 @@
                 "imagePullSecrets": {
                     "type": "array"
                 },
+                "imagePullPolicy": {
+                    "type": "string"
+                },
                 "initContainers": {
                     "type": "array"
                 },
@@ -519,6 +522,9 @@
                 },
                 "imagePullSecrets": {
                     "type": "array"
+                },
+                "imagePullPolicy": {
+                    "type": "string"
                 },
                 "initContainers": {
                     "type": "array"
@@ -1094,6 +1100,9 @@
                 "imagePullSecrets": {
                     "type": "array"
                 },
+                "imagePullPolicy": {
+                    "type": "string"
+                },
                 "initContainers": {
                     "type": "array"
                 },
@@ -1167,6 +1176,9 @@
                 },
                 "imagePullSecrets": {
                     "type": "array"
+                },
+                "imagePullPolicy": {
+                    "type": "string"
                 },
                 "initContainers": {
                     "type": "array"
@@ -1407,6 +1419,9 @@
                 },
                 "imagePullSecrets": {
                     "type": "array"
+                },
+                "imagePullPolicy": {
+                    "type": "string"
                 },
                 "initContainers": {
                     "type": "array"

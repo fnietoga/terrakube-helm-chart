@@ -26,6 +26,7 @@ openldap:
   image: "bitnamilegacy/openldap"
   version: "latest"
   imagePullSecrets: []
+  imagePullPolicy: IfNotPresent
   initContainers: []
   podLabels: {}
   podAnnotations: {}
@@ -244,6 +245,7 @@ api:
   securityContext: {}
   containerSecurityContext: {}
   imagePullSecrets: []
+  imagePullPolicy: IfNotPresent
   initContainers: []
   podDisruptionBudget:
     enabled: false
@@ -324,6 +326,8 @@ executor:
   securityContext: {}
   containerSecurityContext: {}
   imagePullSecrets: []
+  # It may be necessary to set this to Always when using a custom executor image during development and testing.
+  imagePullPolicy: IfNotPresent
   initContainers: []
   podDisruptionBudget:
     enabled: false
@@ -373,6 +377,7 @@ registry:
   securityContext: {}
   containerSecurityContext: {}
   imagePullSecrets: []
+  imagePullPolicy: IfNotPresent
   initContainers: []
   podDisruptionBudget:
     enabled: false
@@ -405,6 +410,7 @@ ui:
   securityContext: {}
   containerSecurityContext: {}
   imagePullSecrets: []
+  imagePullPolicy: IfNotPresent
   initContainers: []
   podDisruptionBudget:
     enabled: false
